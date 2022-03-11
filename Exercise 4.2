@@ -1,0 +1,10 @@
+#Lesson on Lists and Ramdomization
+
+
+import random
+meal_inp = input("Welcome to your daily meal selector. Please type in your possible meals for today, separated by commas.")
+meals = meal_inp.split(", ")
+num_meals = len(meals)
+random_choice = random.randint(0, num_meals -1)
+meal_choice = meals[random_choice]
+print(meal_choice + " will be your meal for today.")
